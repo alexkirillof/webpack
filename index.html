@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date calculator and Timer</title>
+    <link rel="stylesheet" href="style/style.css">
+    <scrip src="./node_modules/howler/dist/howler.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+</head>
+<body>
+        <div class="buttons">
+            <button id="Date calculator">Date calculator</button>
+            <button id="Timer">Timer</button>
+       </div>
+       
+    <div class="date-calculator">
+     <h2>Date calculator</h2>
+        <form id="calcDate">
+            <label for="dateFrom">
+                First date:
+                <input type="date" name="dateFrom" id="dateFrom">
+            </label>
+            <label for="dateTo">
+                Second date:
+                <input type="date" name="dateTo" id="dateTo">
+            </label>
+            <button type="submit">Date difference</button>
+        </form>
+            <p id="output">
+            </p>
+    </div>
+
+    <div class="timer">
+      <h1>Timer</h1>
+        <div id="container">
+            <p id="hour-label" class="label">Hours</p>
+            <p id="min-label" class="label">Minutes</p>
+            <p id="sec-label" class="label">Seconds</p>
+            <input id="hour" type="number" max="99" min="0" value="0" class="time">
+            <p id="p1" class="semicolon">:</p>
+            <input id="minute" type="number" max="60" min="0" value="0" class="time">
+            <p id="p2" class="semicolon">:</p>
+            <input id="sec" type="number" max="60" min="0" value="0" class="time">
+            <button id="start" class="btn">Start</button>
+            <button id="stop" class="btn">Stop</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+    </div>
+    
+</body>
+</html>
