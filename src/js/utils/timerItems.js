@@ -1,13 +1,14 @@
   import {} from '../../node_modules/howler/dist/howler.js'
+  import { Howl} from 'howler';
+import Sound from '../../sound/stop.mp3';
 let h = document.getElementById("hour"),
     m = document.getElementById("minute"),
     s = document.getElementById("sec"),
     startTimer = null;
 
-      var sound = new Howl({
-        urls: ['../../sound/stop.mp3'],
-        volume: 1,
-      });
+    const sound = new Howl({
+        src: [Sound]
+    });
 
     function timerItems(){
         if(h.value == 0 && m.value == 0 && s.value < 1){
