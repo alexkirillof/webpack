@@ -1,8 +1,12 @@
-// import {itemsVid} from './sourse.js';
+import vid1 from '../../video/Snowy.mp4';
+import vid2 from '../../video/Sea.mp4';
+import post1 from '../../video/Snowy.jpg';
+import post2 from '../../video/Sea.jpg';
+
 const videos = document.querySelectorAll('.gallary-video-item'),
       itemsVid = [
-    {src:'video/Snowy.mp4',title:'Снега',poster:'video/Snowy.jpg'},
-    {src:'video/Sea.mp4',title:'Моря',poster:'video/Sea.jpg'},
+    {src:vid1,title:'Снега',poster:post1},
+    {src:vid2,title:'Моря',poster:post2},
   ];
 function renderVid(){
     return itemsVid.forEach(v=>{
